@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#header{
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 80px;
+  background: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06) ;
+  z-index: 999;
+  position: sticky;/*if you want something to sty uo*/
+  top: 0;
+  left: 0;
+}
+
+#navbar{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+#navbar li{
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color:#088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+#mobile{
+  display:none;
+  align-items: center;
+}
+
+#close{
+  display: none;
+}
+
+/*header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+*/
+.section-p1{
+  padding: 40px 80px;
+}
+
+.section-m1{
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.btn {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+
+#sm-banner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap ;
+}
+#sm-banner .banner-box{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("woamn2.jpg");
+  min-width: 850px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+#sm-banner h4{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#sm-banner h2{
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#sm-banner span{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+button.white{
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border: li solid white;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+#sm-banner .banner-box:hover button{
+  background-color: #088178;
+  border: li solid #088178;
+}
+
+#sm-banner .banner-box2{
+  background-image: url("hanger.jpg") ;
+
+}
+
+#banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+}
+
+#banner3 .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("manu.jpg");
+  min-width:33%;
+  height: 30vh ;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#banner3 .banner-box2{
+  background-image: url("yeesez.jpg");
+}
+
+#banner3 .banner-box3{ 
+  background-image: url("ttt-shirt.jpg");
+}
+
+#banner3 h2{
+  color: white;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+#banner3 h3{
+  color: red;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+/*Newsletter*/
+#newsletter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("bacl.jpeg");
+  background-position:  20% 30%;
+  background-color: #041e42;
+}
+
+#newsletter h4{
+  font-size: 22px;
+  font-weight: 700 ;
+  color: #fff;
+
+}
+
+#newsletter p{
+  font-size: 14px;
+  font-weight: 600 ;
+  color: #818ea0;
+
+}
+
+#newsletter p span{
+  color: #ffbd27;
+}
+
+#newsletter .form{
+  display: flex;
+  width: 40%;
+}
+
+#newsletter input{
+  height: 3.125rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 100%;
+  border: li solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+}
+
+#newsletter button{
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/*footer*/
+footer{
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: space-around;
+}
+footer .colum{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+footer .logo{
+  margin-bottom: 20px;
+}
+
+footer h4{
+  font-size: 14px;
+  padding: 20px;
+}
+
+footer p{
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer .follow{
+  margin: top 20px;
+}
+
+footer .follow{
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .roww img{
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+footer .install img{
+  margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover{
+  color: #088178;
+}
+
+footer .copyright{
+  width: 100%;
+  text-align: center;
+}
